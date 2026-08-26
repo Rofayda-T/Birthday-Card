@@ -304,8 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-// Add this at the bottom of your main script file
-// Automatically check state when returning from demo.html
+
 window.addEventListener('pageshow', (event) => {
   // event.persisted is true when navigating back/forward from cache
   const isOpened = sessionStorage.getItem("envelopeOpened") === "true";
